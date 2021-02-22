@@ -18,7 +18,7 @@ public class CustomerDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_CUSTOMER_TABLE = "CREATE TABLE " + customers.TABLE_NAME + " (" + customers.COLUMN_ACCNUM + " INTEGER PRIMARY KEY NOT NULL,"
+        String CREATE_CUSTOMER_TABLE = "CREATE TABLE " + customers.TABLE_NAME + " ( " + customers.COLUMN_ACCNUM + " INTEGER PRIMARY KEY ,"
                 + customers.COLUMN_NAME + " TEXT NOT NULL," + customers.COLUMN_BALANCE + " INTEGER NOT NULL DEFAULT 0);";
 
         db.execSQL(CREATE_CUSTOMER_TABLE);

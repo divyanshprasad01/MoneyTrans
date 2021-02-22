@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertDummyData"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dummyName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:hint="Name "
+        android:inputType="text"
+        />
+    <EditText
+        android:inputType="text"
+        android:id="@+id/dummyAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:hint="Account Number "
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/dummyBalance"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:hint="Balance"
+        />
+    <Button
+        android:id="@+id/saveDummyData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:elevation="5dp"
+        />
+    
+
+</LinearLayout>
